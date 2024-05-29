@@ -3,24 +3,32 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>NutriTable</title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
 	<header>
-		<div class="container">
-			<h2 class="titulo">NutriTable</h2>
-		</div>
+		<nav>
+			<div class="logo-container">
+				<img src="img\nutri-icon.png" alt="Logo">
+				<span>NutriTable</span>
+			</div>
+		</nav>
 	</header>
+	
 	
 	<main>
 		<section class="container">
-			<h2>Meus pacientes</h2>
+			<h2 class="texto-h2">Meus pacientes</h2>
 			<label for="filtrar-tabela">Filtre</label>
 			<input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do seu paciente">
 			<table>
@@ -79,7 +87,7 @@
 	</main>
 
 	<section class="container">
-		<h2 id="titulo-form">Adicionar novo paciente</h2>
+		<h2 class="texto-h2" id="titulo-form">Adicionar novo paciente</h2>
 		<ul id="mensagens-erro">
 
 		</ul>

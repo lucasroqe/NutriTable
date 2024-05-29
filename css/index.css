@@ -1,35 +1,52 @@
 *{
+	padding: 0;
+	margin: 0;
 	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
  }
+
+ :root{
+    --h2-font: 2rem;
+}
 
 body{
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 }
 
-header{
-	background-color: #333;
-	height: 3em;
-	color: #FFF;
-	margin-bottom: 1em;
+header {
+    background-color: #78B159; 
+    padding: 10px 0; 
 }
 
-header h1{
-	font-size: 2em;
-	display:inline-block;
-	vertical-align:	middle;
-}
-header h2{
-	font-size: 2em;
-	display:inline-block;
-	vertical-align:	middle;
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 500px; /* Largura máxima para o conteúdo do cabeçalho */
+    margin: 0 auto; /* Centraliza o cabeçalho na página */
 }
 
-header .container:before{
-	content: '';
-	display:inline-block;
-	height: 100%;
-	vertical-align:	middle;
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    max-height: 40px; /* Altura máxima da imagem */
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.logo-container span {
+    color: #fff; /* Cor do texto */
+    font-weight: bold; /* Estilo do texto */
+	font-size: 1.5rem;
+}
+
+.texto-h2{
+	font-size: var(--h2-font);
+	text-align: center;
+	margin: 1rem 0;
 }
 
 .container{
@@ -160,4 +177,3 @@ button[disabled=disabled], button:disabled {
 .invisivel{
 	display: none;
 }
-
