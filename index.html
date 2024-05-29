@@ -30,14 +30,14 @@
 		<section class="container">
 			<h2 class="texto-h2">Meus pacientes</h2>
 			<label for="filtrar-tabela">Filtre</label>
-			<input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do seu paciente">
+			<input type="text" name="filtro" id="filtrar-tabela" placeholder=" Digite o nome do seu paciente">
 			<table>
 				<thead>
 					<tr>
 						<th>Nome</th>
-						<th>Peso(kg)</th>
-						<th>Altura(m)</th>
-						<th>Gordura Corporal(%)</th>
+						<th>Peso (kg)</th>
+						<th>Altura (m)</th>
+						<th>Gordura Corporal (%)</th>
 						<th>IMC</th>
 					</tr>
 				</thead>
@@ -94,31 +94,39 @@
 		<form id="form-adiciona">
 			<div class="">
 				<label for="nome">Nome:</label>
-				<input id="nome" name="nome" type="text" placeholder="digite o nome do seu paciente" class="campo">
+				<input id="nome" name="nome" type="text" placeholder="Digite o nome do seu paciente" class="campo">
 			</div>
 			<div class="grupo">
 				<label for="peso">Peso:</label>
-				<input id="peso" name="peso" type="text" placeholder="digite o peso do seu paciente"
+				<input id="peso" name="peso" type="text" placeholder="Digite o peso do seu paciente"
 					class="campo campo-medio">
 			</div>
 			<div class="grupo">
 				<label for="altura">Altura:</label>
-				<input id="altura" name="altura" type="text" placeholder="digite a altura do seu paciente"
+				<input id="altura" name="altura" type="text" placeholder="Digite a altura do seu paciente"
 					class="campo campo-medio">
 			</div>
 			<div class="grupo">
 				<label for="gordura">% de Gordura:</label>
 				<input id="gordura" name="gordura" type="text"
-					placeholder="digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
+					placeholder="Digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
 			</div>
 
 			<button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
 		</form>
+		
 	</section>
+
+	<footer class="meu-rodape">
+		<div class="last-text">
+			<p>Copyright © 2024 por Lucas Roque. Todos os direitos reservados.</p>
+		</div>
+	</footer>
+	
+	
 	<script src="js/calcula-imc.js"></script>
 	<script src="js/form.js"></script>
 	<script src="js/remover-paciente.js"></script>
 	<script src="js\filtrar.js"></script>
 </body>
-
 </html>

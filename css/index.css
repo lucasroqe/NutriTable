@@ -12,6 +12,7 @@
 body{
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	font-size: 14px;
+	height: 100%;
 }
 
 header {
@@ -56,7 +57,7 @@ nav {
 }
 
 section{
-	margin: 2em 0;
+	padding: 10px 3% 50px;
 	overflow: hidden;
 }
 
@@ -85,6 +86,8 @@ td, th {
 th{
 	font-weight: bold;
 	background-color: #EEE;
+	vertical-align: middle;
+
 }
 
 label{
@@ -122,8 +125,8 @@ button{
 	margin: 0;
 	margin-top: -3px;
 	color: #fff;
-	background-color:#0c8cd3;
-	border-color: #04324c;
+	background-color:#FFA500;
+	border-color: #d48a00;
 	width: 20%;
     display: block;
     clear: both;
@@ -176,4 +179,24 @@ button[disabled=disabled], button:disabled {
 
 .invisivel{
 	display: none;
+}
+
+
+footer{
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 20px 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--bg-color);
+}
+  
+
+@media (max-width: 1480px){
+    footer{
+        padding: 15px 3%;
+    }
 }
