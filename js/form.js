@@ -101,4 +101,3 @@ function exibeMensagensErro(erros) {
         ul.appendChild(li)
     });
 }
-
